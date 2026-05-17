@@ -1,0 +1,6 @@
+Modelo,Método Estándar,Recall Estándar,Tiempo Estándar (s),Método Optimizado,Recall Optimizado,Tiempo Optimizado (s),Δ recall (%),Δ tiempo (%)
+KNN,optuna,0.733,694.68,deap,0.733,240.16,0.0,-65.43
+Ridge/Lasso,optuna,0.8813,79.93,optuna,0.8817,187.41,0.04,134.47
+Naive Bayes,optuna,0.8427,35.26,optuna,0.8427,42.4,0.0,20.25
+XGBoost,optuna,0.8849,448.16,optuna,0.8845,95.67,-0.04,-78.65
+SVM,optuna,0.873,20.89,random_search,0.8379,226.6,-4.02,984.73
