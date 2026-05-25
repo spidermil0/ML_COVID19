@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Desarrollo de modelos de Machine Learning &#8212; My sample book</title>
   
@@ -29,39 +28,35 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Modelado';</script>
@@ -165,13 +160,24 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Clasificación del Estado Clínico de Pacientes COVID-19 en el Atlántico
                 </a>
             </li>
         </ul>
@@ -183,6 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Desarrollo de modelos de Machine Learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Evaluacion_Modelos_SOTA.html">Modelos a integrar en el dataset</a></li>
+
 </ul>
 
     </div>
@@ -212,9 +219,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -355,9 +362,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -422,7 +429,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="desarrollo-de-modelos-de-machine-learning">
-<h1>Desarrollo de modelos de Machine Learning<a class="headerlink" href="#desarrollo-de-modelos-de-machine-learning" title="Permalink to this heading">#</a></h1>
+<h1>Desarrollo de modelos de Machine Learning<a class="headerlink" href="#desarrollo-de-modelos-de-machine-learning" title="Link to this heading">#</a></h1>
 <p>El objetivo de esta sección es profundizar en el desarrollo de modelos de Machine Learning, incorporando técnicas avanzadas de optimización de hiperparámetros y validación estadística.</p>
 <p>El objetivo de esta sección es optimizar el desempeño de los modelos de aprendizaje utilizando técnicas avanzadas de búsqueda eficiente en espacios de alta dimensión, los métodos utilizados serán:</p>
 <ul class="simple">
@@ -1543,7 +1550,7 @@ Los resultados se acumulan en REPO_RESULTADOS y se persisten automáticamente en
 </div>
 </div>
 <section id="xgboost-hist-early-stopping">
-<h2>XGBoost hist + early stopping.<a class="headerlink" href="#xgboost-hist-early-stopping" title="Permalink to this heading">#</a></h2>
+<h2>XGBoost hist + early stopping.<a class="headerlink" href="#xgboost-hist-early-stopping" title="Link to this heading">#</a></h2>
 <p>Implementación de XGBoost usando tree_method=’hist’ con aceleración en GPU (device=’cuda’), que construye árboles mediante histogramas de gradientes en lugar del método exacto, reduciendo significativamente el tiempo de entrenamiento en datasets grandes.</p>
 <p><strong>Hiperparámetros fijos:</strong> colsample_bytree=0.8, reg_alpha=0.1, reg_lambda=1.0, eval_metric=’logloss’.</p>
 <p><strong>Hiperparámetros optimizados:</strong></p>
@@ -2375,7 +2382,7 @@ random_search  weights   0.871771   0.267809     0.876183     0.270807
 </div>
 </section>
 <section id="knn-con-kd-tree">
-<h2>KNN con KD-Tree.<a class="headerlink" href="#knn-con-kd-tree" title="Permalink to this heading">#</a></h2>
+<h2>KNN con KD-Tree.<a class="headerlink" href="#knn-con-kd-tree" title="Link to this heading">#</a></h2>
 <p>El uso de K-Nearest Neighbors (KNN) se descartó como candidato principal debido a su ineficiencia estructural ante grandes volúmenes de datos y su alta sensibilidad al ruido en dimensiones elevadas. Al ser un algoritmo basado en memoria, KNN no genera un modelo predictivo compacto, sino que requiere comparar cada nuevo paciente contra la totalidad del set de entrenamiento; con 600,000 registros, el costo computacional en términos de memoria RAM y tiempo de respuesta es prohibitivo para un entorno clínico real. Por esta razón, se optó por entrenar con un subconjunto de 100,000 observaciones, una escala que permite evaluar la capacidad del algoritmo sin comprometer la estabilidad del sistema, confirmando que la ‘maldición de la dimensionalidad’ y el sesgo hacia la clase mayoritaria (pacientes leves) impedían alcanzar el Recall necesario para la detección crítica de fallecimientos, especialmente comparado con modelos de ensamble más robustos.</p>
 <p>En pocas palabras, para este algoritmo se usará un subconjunto para hacer el entrenamiento porque se deseó simplificar con este algoritmo, dado que, KNN por la naturaleza de los datos no tendrá los mejoras mejores métricas. Además, se usará la técnica de optimización KD-Tree para este algoritmo y no las demás por lo hablado anteriormente, no tiene sentido probar con todas (Ball Tress y FAISS) porque al final el algoritmo dará métricas pobres porque solo mejoran la rapidez y no el aprendizaje.</p>
 <div class="cell docutils container">
@@ -3204,7 +3211,7 @@ random_search    smote   0.718796   0.167543     0.725158     0.168426
 </div>
 </section>
 <section id="ridge-lasso-con-solver-saga">
-<h2>Ridge/Lasso con Solver Saga<a class="headerlink" href="#ridge-lasso-con-solver-saga" title="Permalink to this heading">#</a></h2>
+<h2>Ridge/Lasso con Solver Saga<a class="headerlink" href="#ridge-lasso-con-solver-saga" title="Link to this heading">#</a></h2>
 <p>Regresión logística con el solver SAGA (Stochastic Average Gradient Augmented), que soporta tanto regularización L1 (Lasso, produce sparsity) como L2 (Ridge, penaliza magnitud de coeficientes). SAGA es especialmente eficiente en datasets grandes y permite selección automática entre ambas regularizaciones durante la optimización.</p>
 <p><strong>Hiperparámetros fijos:</strong> max_iter=2000, solver=’saga’.</p>
 <p><strong>Hiperparámetros optimizados:</strong></p>
@@ -4031,7 +4038,7 @@ random_search  weights   0.875714   0.234804     0.881703     0.235923
 </div>
 </section>
 <section id="naive-bayes-partial-fit">
-<h2>Naive Bayes (partial_fit)<a class="headerlink" href="#naive-bayes-partial-fit" title="Permalink to this heading">#</a></h2>
+<h2>Naive Bayes (partial_fit)<a class="headerlink" href="#naive-bayes-partial-fit" title="Link to this heading">#</a></h2>
 <p>Clasificador probabilístico basado en el teorema de Bayes con independencia condicional entre features, asumiendo distribución gaussiana para variables continuas. Se implementa con partial_fit mediante un wrapper personalizado que entrena el modelo en lotes (<em>mini-batches</em> de 10,000 registros), permitiendo procesar el dataset completo sin cargarlo íntegramente en memoria.</p>
 <p>El mecanismo de balanceo por pesos se implementa ajustando los <strong>priors</strong> de clase en lugar de class_weight, ya que GaussianNB no soporta este parámetro directamente.</p>
 <p><strong>Hiperparámetros optimizados:</strong></p>
@@ -4840,7 +4847,7 @@ random_search   adasyn   0.849399   0.207418     0.836356     0.202156
 </div>
 </section>
 <section id="linear-svc">
-<h2>Linear SVC<a class="headerlink" href="#linear-svc" title="Permalink to this heading">#</a></h2>
+<h2>Linear SVC<a class="headerlink" href="#linear-svc" title="Link to this heading">#</a></h2>
 <p>Máquina de Vectores de Soporte lineal (LinearSVC) envuelta en CalibratedClassifierCV con calibración sigmoid (Platt scaling) para obtener probabilidades calibradas, requeridas para calcular PR-AUC y ROC-AUC. Se usa dual=False por ser más eficiente cuando el número de muestras supera al número de features, y loss=’squared_hinge’ como función de pérdida.</p>
 <p><strong>Hiperparámetros fijos:</strong> loss=’squared_hinge’, dual=False, max_iter=2000, calibración con 3 folds internos.</p>
 <p><strong>Hiperparámetros optimizados:</strong></p>
@@ -5670,7 +5677,7 @@ random_search   adasyn   0.829587   0.230099     0.837934     0.229371
 <p>Luego del proceso hecho, se guardarán los resultados para los modelos de Machine Learning más rápidos.</p>
 </section>
 <section id="knn-base">
-<h2>KNN base<a class="headerlink" href="#knn-base" title="Permalink to this heading">#</a></h2>
+<h2>KNN base<a class="headerlink" href="#knn-base" title="Link to this heading">#</a></h2>
 <p>Variante de KNN con algorithm=’brute’ que calcula distancias a todos los puntos del conjunto de entrenamiento sin indexación, útil como línea base para comparar contra la optimización estructural del KD-Tree. Igualmente entrenado sobre submuestra estratificada del 30%.</p>
 <p><strong>Hiperparámetros optimizados:</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -6434,7 +6441,7 @@ random_search   adasyn   0.697113   0.152525     0.696372     0.154491
 </div>
 </section>
 <section id="regresion-logistica-estandar">
-<h2>Regresión Logística Estandar<a class="headerlink" href="#regresion-logistica-estandar" title="Permalink to this heading">#</a></h2>
+<h2>Regresión Logística Estandar<a class="headerlink" href="#regresion-logistica-estandar" title="Link to this heading">#</a></h2>
 <p>Regresión logística con el solver L-BFGS (<em>Limited-memory Broyden–Fletcher–Goldfarb–Shanno</em>), un método cuasi-newtoniano de segundo orden que converge más rápido que los métodos de gradiente en datasets de tamaño moderado. A diferencia de SAGA, lbfgs solo soporta regularización L2, lo que simplifica el espacio de búsqueda a un único hiperparámetro continuo.</p>
 <p><strong>Hiperparámetros fijos:</strong> penalty=’l2’, solver=’lbfgs’, max_iter=1000.</p>
 <p><strong>Hiperparámetros optimizados:</strong></p>
@@ -7206,7 +7213,7 @@ random_search   adasyn   0.840330   0.234105     0.844637     0.234128
 </div>
 </section>
 <section id="decision-tree">
-<h2>Decision Tree<a class="headerlink" href="#decision-tree" title="Permalink to this heading">#</a></h2>
+<h2>Decision Tree<a class="headerlink" href="#decision-tree" title="Link to this heading">#</a></h2>
 <p>Implementación de un clasificador basado en un único árbol de decisión (DecisionTreeClassifier). Este modelo construye fronteras de decisión ortogonales mediante particiones recursivas del espacio de características basadas en criterios de pureza de nodos (Gini). Es altamente propenso al sobreajuste si no se restringe su crecimiento, por lo que la optimización se enfoca en parámetros de poda estructural y restricciones de subdivisión de muestras en los nodos.</p>
 <p><strong>Hiperparámetros fijos:</strong> criterion=’gini’, random_state=RANDOM_STATE.</p>
 <p><strong>Hiperparámetros optimizados:</strong></p>
@@ -8006,7 +8013,7 @@ random_search  weights   0.909422   0.188395     0.901420     0.188835
 </div>
 </section>
 <section id="random-forest">
-<h2>Random Forest<a class="headerlink" href="#random-forest" title="Permalink to this heading">#</a></h2>
+<h2>Random Forest<a class="headerlink" href="#random-forest" title="Link to this heading">#</a></h2>
 <p>Algoritmo de aprendizaje ensamble de tipo Bagging (RandomForestClassifier) que entrena una colección de árboles de decisión independientes sobre submuestras aleatorias del dataset (muestreo con reemplazo) y combina sus predicciones mediante promedios probabilísticos. Introduce aleatoriedad estructural al seleccionar un subconjunto aleatorio de características en cada división de nodo, reduciendo drásticamente la varianza y el sobreajuste en comparación con un árbol único.</p>
 <p><strong>Hiperparámetros fijos:</strong> random_state=RANDOM_STATE, n_jobs=-1.</p>
 <p><strong>Hiperparámetros optimizados:</strong></p>
@@ -8823,7 +8830,7 @@ random_search   adasyn   0.859255   0.226976     0.861593     0.223841
 </div>
 </section>
 <section id="xgboost-estandar">
-<h2>XGBoost estandar<a class="headerlink" href="#xgboost-estandar" title="Permalink to this heading">#</a></h2>
+<h2>XGBoost estandar<a class="headerlink" href="#xgboost-estandar" title="Link to this heading">#</a></h2>
 <p>Implementación del clasificador XGBoost utilizando el método de construcción de árboles exacto (tree_method=’exact’). A diferencia de la variante basada en histogramas, este enfoque evalúa de manera exhaustiva todos los puntos de división posibles para cada característica continua. Si bien garantiza una precisión matemática estricta al calcular las divisiones óptimas del gradiente, presenta una mayor carga computacional en comparación con los métodos basados en aproximaciones de bins.</p>
 <p><strong>Hiperparámetros fijos:</strong> colsample_bytree=0.8, reg_alpha=0.1, reg_lambda=1.0, tree_method=’exact’, eval_metric=’logloss’, random_state=RANDOM_STATE, n_jobs=-1.</p>
 <p><strong>Hiperparámetros optimizados:</strong></p>
@@ -9946,7 +9953,7 @@ random_search  weights   0.870194   0.267496     0.878943     0.268545
 </div>
 </section>
 <section id="svm">
-<h2>SVM<a class="headerlink" href="#svm" title="Permalink to this heading">#</a></h2>
+<h2>SVM<a class="headerlink" href="#svm" title="Link to this heading">#</a></h2>
 <p>Implementación de una Máquina de Vectores de Soporte con Kernel de Función de Base Radial (cuML SVC kernel RBF), ejecutada de manera nativa en GPU dentro de un contenedor estructurado bajo Docker en un entorno Linux. Esta arquitectura por contenedores permite aislar y orquestar las dependencias de bajo nivel del ecosistema NVIDIA CUDA, garantizando la compatibilidad de las librerías de aceleración por hardware (cuML, cupy) de forma transparente.</p>
 <p>Para viabilizar este modelo y contrarrestar el escalado computacional no lineal <span class="math notranslate nohighlight">\(O(n^3)\)</span> característico del solver SVM tradicional en CPU, el pipeline integra de manera consecutiva un riguroso esquema de optimización de recursos enfocado en tres frentes:</p>
 <ol class="arabic simple">
@@ -10370,7 +10377,7 @@ grid_search   adasyn   0.834624   0.236368     0.861199     0.214642
 </div>
 </section>
 <section id="naive-bayes">
-<h2>Naive Bayes<a class="headerlink" href="#naive-bayes" title="Permalink to this heading">#</a></h2>
+<h2>Naive Bayes<a class="headerlink" href="#naive-bayes" title="Link to this heading">#</a></h2>
 <p>Clasificador probabilístico basado en la aplicación del teorema de Bayes bajo la asunción de independencia condicional fuerte entre todas las características explicativas (naive). Esta variante asume que las variables continuas siguen una distribución gaussiana (normal) dentro de cada clase. A diferencia de la versión optimizada para grandes volúmenes con partial_fit, esta implementación procesa el conjunto de datos de manera síncrona en memoria, lo que permite evaluar mallas tradicionales de manera directa.</p>
 <p>Para habilitar un mecanismo de balanceo por pesos nativo dentro de este estimador (dado que GaussianNB carece del parámetro estructural class_weight), el pipeline manipula explícitamente las probabilidades previas del modelo (priors). Al activar el balanceo por pesos, se altera de forma directa la distribución a priori asignada a la hipótesis del evento crítico (prior_fallecido), lo que desplaza el umbral bayesiano de decisión probabilística para penalizar los falsos negativos de la clase minoritaria sin alterar físicamente las densidades gaussianas estimadas a partir de las variables independientes.</p>
 <p><strong>Hiperparámetros fijos:</strong> Ninguno (el espacio se deja libre para la optimización de suavizado y pesos).</p>
@@ -11183,7 +11190,7 @@ random_search   adasyn   0.849399   0.207418     0.836356     0.202156
 </div>
 </section>
 <section id="optimizacion-de-hiperparametros">
-<h2>Optimización de Hiperparámetros<a class="headerlink" href="#optimizacion-de-hiperparametros" title="Permalink to this heading">#</a></h2>
+<h2>Optimización de Hiperparámetros<a class="headerlink" href="#optimizacion-de-hiperparametros" title="Link to this heading">#</a></h2>
 <p>El objetivo es optimizar el desempeño de los modelos mediante técnicas avanzadas de búsqueda eficiente en espacios de alta dimensión. Para esto, se analizarán de forma cruzada dos gráficos de barras múltiples:</p>
 <ul class="simple">
 <li><p>Tiempo de ejecución por método: Mide el costo computacional total requerido por cada estrategia de optimización para converger a su solución.</p></li>
@@ -11420,7 +11427,7 @@ random_search   adasyn   0.849399   0.207418     0.836356     0.202156
 <p>Para estas versiones de los algoritmos la mejora en la complejidad de cada método de optimización de hiperparámetros se confirma, el ganador es RandomSearch.</p>
 </section>
 <section id="optimizacion-computacional">
-<h2>Optimización Computacional<a class="headerlink" href="#optimizacion-computacional" title="Permalink to this heading">#</a></h2>
+<h2>Optimización Computacional<a class="headerlink" href="#optimizacion-computacional" title="Link to this heading">#</a></h2>
 <p>Con esta sección se busca mostrar cómo es la Reducción del costo computacional manteniendo o mejorando el desempeño del modelo. Para ello se analizarán los algoritmos de KNN, Ridge/Lasso, Naive Bayes, XGBoost y SVM, mostrando la comparación del tiempo, complejidad teórica vs tiempo empírico y Trade-off.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -11529,7 +11536,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 <p>En terminos generales, en las versiones optimizadas de cada modelo no cambió mucho el recall, solo en el caso de SVM que fue mejor por 4 unidades. Por tanto, no hubo mejora significativa en la métrica de validación que se está usando.</p>
 </section>
 <section id="evaluacion-de-modelos">
-<h2>Evaluación de Modelos<a class="headerlink" href="#evaluacion-de-modelos" title="Permalink to this heading">#</a></h2>
+<h2>Evaluación de Modelos<a class="headerlink" href="#evaluacion-de-modelos" title="Link to this heading">#</a></h2>
 <p>Para cada modelo de clasificación implementado se presentaá la matriz de confusión, Curva Roc y la tabla de métricas de precisión.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -11574,7 +11581,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 </div>
 </div>
 <section id="xgboost">
-<h3>XGBoost<a class="headerlink" href="#xgboost" title="Permalink to this heading">#</a></h3>
+<h3>XGBoost<a class="headerlink" href="#xgboost" title="Link to this heading">#</a></h3>
 <p><strong>Matriz de confusión</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -11712,7 +11719,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 </div>
 </section>
 <section id="id1">
-<h3>KNN con KD-Tree<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<h3>KNN con KD-Tree<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <p><strong>Matriz de confusión</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -11849,7 +11856,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 </div>
 </section>
 <section id="id2">
-<h3>Ridge/Lasso con Solver Saga<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<h3>Ridge/Lasso con Solver Saga<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <p><strong>Matriz de confusión</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -11986,7 +11993,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 </div>
 </section>
 <section id="id3">
-<h3>Naive Bayes (partial_fit)<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<h3>Naive Bayes (partial_fit)<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <p><strong>Matriz de confusión</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -12123,7 +12130,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 </div>
 </section>
 <section id="linear-svc-svm-optimizado">
-<h3>Linear SVC (SVM optimizado)<a class="headerlink" href="#linear-svc-svm-optimizado" title="Permalink to this heading">#</a></h3>
+<h3>Linear SVC (SVM optimizado)<a class="headerlink" href="#linear-svc-svm-optimizado" title="Link to this heading">#</a></h3>
 <p><strong>Matriz de confusión</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -12260,7 +12267,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 </div>
 </section>
 <section id="knn-estandar">
-<h3>KNN Estandar<a class="headerlink" href="#knn-estandar" title="Permalink to this heading">#</a></h3>
+<h3>KNN Estandar<a class="headerlink" href="#knn-estandar" title="Link to this heading">#</a></h3>
 <p><strong>Matriz de confusión</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -12397,7 +12404,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 </div>
 </section>
 <section id="id4">
-<h3>Regresión Logística Estandar<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<h3>Regresión Logística Estandar<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <p><strong>Matriz de confusión</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -12534,7 +12541,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 </div>
 </section>
 <section id="id5">
-<h3>Decision Tree<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<h3>Decision Tree<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <p><strong>Matriz de confusión</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -12671,7 +12678,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 </div>
 </section>
 <section id="id6">
-<h3>Random Forest<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<h3>Random Forest<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <p><strong>Matriz de confusión</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -12808,7 +12815,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 </div>
 </section>
 <section id="id7">
-<h3>XGBoost estandar<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<h3>XGBoost estandar<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <p><strong>Matriz de confusión</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -12945,7 +12952,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 </div>
 </section>
 <section id="svm-estandar">
-<h3>SVM estandar<a class="headerlink" href="#svm-estandar" title="Permalink to this heading">#</a></h3>
+<h3>SVM estandar<a class="headerlink" href="#svm-estandar" title="Link to this heading">#</a></h3>
 <p><strong>Matriz de confusión</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -13119,7 +13126,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 </div>
 </section>
 <section id="naive-bayes-estandar">
-<h3>Naive Bayes estandar<a class="headerlink" href="#naive-bayes-estandar" title="Permalink to this heading">#</a></h3>
+<h3>Naive Bayes estandar<a class="headerlink" href="#naive-bayes-estandar" title="Link to this heading">#</a></h3>
 <p><strong>Matriz de confusión</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -13271,7 +13278,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 </div>
 </section>
 <section id="analisis-de-balanceo-de-clases">
-<h3>Analisis de Balanceo de Clases<a class="headerlink" href="#analisis-de-balanceo-de-clases" title="Permalink to this heading">#</a></h3>
+<h3>Analisis de Balanceo de Clases<a class="headerlink" href="#analisis-de-balanceo-de-clases" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -13374,7 +13381,7 @@ Naive Bayes          optuna           0.8427                35.26            opt
 </section>
 </section>
 <section id="comparacion-estadistica">
-<h2>Comparación Estadística<a class="headerlink" href="#comparacion-estadistica" title="Permalink to this heading">#</a></h2>
+<h2>Comparación Estadística<a class="headerlink" href="#comparacion-estadistica" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -13622,7 +13629,7 @@ XGBoost Optimizado     0.8946           0.8886           0.9005
 <p>Asimismo, con el fin de proporcionar una evaluación completa de la incertidumbre asociada a las estimaciones, se propone la incorporación de intervalos de confianza (IC) para las métricas principales (Recall y AUC-ROC). Al calcular estos intervalos mediante técnicas de remuestreo (bootstrapping) o validación cruzada repetida, se introducen barras de error en los análisis gráficos. Esta aproximación metodológica permite validar si el comportamiento del ensamble definitivo (XGBoost) es robusto y estable frente a diferentes particiones de los datos de salud, o si las diferencias observadas en los promedios puntuales de ciertas técnicas de balanceo presentan traslapes en sus intervalos, lo que indicaría una equivalencia práctica en sus capacidades de generalización.</p>
 </section>
 <section id="resultados-finales">
-<h2>Resultados finales<a class="headerlink" href="#resultados-finales" title="Permalink to this heading">#</a></h2>
+<h2>Resultados finales<a class="headerlink" href="#resultados-finales" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;resultados_ml_covid.csv&#39;</span><span class="p">)</span>
@@ -13820,7 +13827,7 @@ By The Jupyter Book Community
 
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>

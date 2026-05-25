@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Análisis exploratorio de Datos &#8212; My sample book</title>
   
@@ -29,44 +28,40 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'EDA';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Desarrollo de modelos de Machine Learning" href="Modelado.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+    <link rel="prev" title="Clasificación del Estado Clínico de Pacientes COVID-19 en el Atlántico" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -163,13 +158,24 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Clasificación del Estado Clínico de Pacientes COVID-19 en el Atlántico
                 </a>
             </li>
         </ul>
@@ -181,6 +187,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <li class="toctree-l1"><a class="reference internal" href="Modelado.html">Desarrollo de modelos de Machine Learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Evaluacion_Modelos_SOTA.html">Modelos a integrar en el dataset</a></li>
+
 </ul>
 
     </div>
@@ -210,9 +217,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -353,9 +360,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -468,15 +475,15 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="analisis-exploratorio-de-datos">
-<h1>Análisis exploratorio de Datos<a class="headerlink" href="#analisis-exploratorio-de-datos" title="Permalink to this heading">#</a></h1>
+<h1>Análisis exploratorio de Datos<a class="headerlink" href="#analisis-exploratorio-de-datos" title="Link to this heading">#</a></h1>
 <p>Carlos Romero, Sergio Rada, Camilo Gónzales</p>
 <section id="introduccion">
-<h2>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this heading">#</a></h2>
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h2>
 <p>Desde su aparición a finales de 2019, la pandemia de COVID-19 generó un impacto significativo en los sistemas de salud a nivel mundial, evidenciando la necesidad de contar con herramientas que permitan analizar y anticipar el comportamiento de la enfermedad. En este contexto, el análisis de datos epidemiológicos se ha convertido en un elemento clave para comprender los factores asociados a la evolución clínica de los pacientes y apoyar la toma de decisiones en salud pública.</p>
 <p>El presente proyecto se enfoca en el análisis exploratorio de datos (EDA) de un conjunto de registros de casos de COVID-19 reportados en el departamento del Atlántico, Colombia. Este conjunto de datos contiene información relevante sobre características demográficas, epidemiológicas y clínicas de los pacientes, tales como edad, sexo, tipo de contagio, ubicación del caso, estado del paciente y fechas relacionadas con el diagnóstico y evolución de la enfermedad.</p>
 </section>
 <section id="objetivo">
-<h2>Objetivo<a class="headerlink" href="#objetivo" title="Permalink to this heading">#</a></h2>
+<h2>Objetivo<a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
 <p>El objetivo principal del análisis es estudiar las variables presentes en el dataset y explorar sus patrones, distribuciones y posibles relaciones con el fin de identificar factores asociados a la severidad de los casos de COVID-19. En este proyecto, la severidad se entiende como el nivel de gravedad que alcanza la enfermedad en un paciente, pudiendo manifestarse desde casos leves que se manejan en casa hasta casos críticos que requieren hospitalización, ingreso a unidades de cuidados intensivos o que resultan en fallecimiento.</p>
 <p>A partir de este análisis exploratorio se busca preparar y comprender adecuadamente los datos para el desarrollo posterior de modelos de Machine Learning capaces de predecir la severidad de los casos. Estos modelos permitirían identificar patrones que ayuden a estimar el riesgo de evolución grave de un paciente basándose en sus características demográficas y epidemiológicas.</p>
 <div class="cell docutils container">
@@ -505,9 +512,9 @@ document.write(`
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="caracteristicas-del-dataset">
-<h1>Características del Dataset<a class="headerlink" href="#caracteristicas-del-dataset" title="Permalink to this heading">#</a></h1>
+<h1>Características del Dataset<a class="headerlink" href="#caracteristicas-del-dataset" title="Link to this heading">#</a></h1>
 <section id="dimensiones">
-<h2>Dimensiones<a class="headerlink" href="#dimensiones" title="Permalink to this heading">#</a></h2>
+<h2>Dimensiones<a class="headerlink" href="#dimensiones" title="Link to this heading">#</a></h2>
 <p>Inicialmente es necesario observar las dimensiones del dataset para tener conocimiento sobre el número de entradas y de variables presentes:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -525,7 +532,7 @@ document.write(`
 <p>Este dataset cuenta con 419061 entradas, cada una representando a un caso positivo de COVID-19 en el departamento del Atlántico, y cada entrada es caracterizada por 23 variables que serán explicadas a continuación.</p>
 </section>
 <section id="descripcion-de-variables">
-<h2>Descripción de variables<a class="headerlink" href="#descripcion-de-variables" title="Permalink to this heading">#</a></h2>
+<h2>Descripción de variables<a class="headerlink" href="#descripcion-de-variables" title="Link to this heading">#</a></h2>
 <p>Se observan las primeras 5 entradas para familiarizarse con la estructura de cada una, seguido de esto se describe cada variable con su tipo:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -793,7 +800,7 @@ memory usage: 73.5+ MB
 </div>
 </section>
 <section id="diccionario-de-variables">
-<h2>Diccionario de variables<a class="headerlink" href="#diccionario-de-variables" title="Permalink to this heading">#</a></h2>
+<h2>Diccionario de variables<a class="headerlink" href="#diccionario-de-variables" title="Link to this heading">#</a></h2>
 <p>A continuación se realiza una descripción clara de las variables del conjunto de datos de casos de COVID-19 en el departamento del Atlántico (Colombia) usando la información que aparece en la documentación y dando contexto de qué representa cada variable.</p>
 <ul class="simple">
 <li><p><strong>fecha reporte web	(serie temporal):</strong> Corresponde a la fecha en la que el caso fue publicado en el sitio web oficial del sistema de vigilancia epidemiológica.</p></li>
@@ -877,9 +884,9 @@ Se utiliza especialmente para registrar edades de recién nacidos o niños peque
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="pre-procesamiento">
-<h1>Pre-Procesamiento<a class="headerlink" href="#pre-procesamiento" title="Permalink to this heading">#</a></h1>
+<h1>Pre-Procesamiento<a class="headerlink" href="#pre-procesamiento" title="Link to this heading">#</a></h1>
 <section id="tratamiento-de-valores-faltantes">
-<h2>Tratamiento de valores faltantes<a class="headerlink" href="#tratamiento-de-valores-faltantes" title="Permalink to this heading">#</a></h2>
+<h2>Tratamiento de valores faltantes<a class="headerlink" href="#tratamiento-de-valores-faltantes" title="Link to this heading">#</a></h2>
 <p>Seguido de esto se comprueba la existencia de valores faltantes para cada variable:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1050,7 +1057,7 @@ Se utiliza especialmente para registrar edades de recién nacidos o niños peque
 </div>
 </section>
 <section id="otras-variables-a-eliminar">
-<h2>Otras variables a eliminar<a class="headerlink" href="#otras-variables-a-eliminar" title="Permalink to this heading">#</a></h2>
+<h2>Otras variables a eliminar<a class="headerlink" href="#otras-variables-a-eliminar" title="Link to this heading">#</a></h2>
 <p>En esta sección se eliminarán otras variables debido a que no son de interés particular para el estudio a realizar:</p>
 <ul class="simple">
 <li><p><strong>ID del caso</strong> Funciona únicamente como un identificador para cada caso por lo que no proporciona información de valor para la variable objetivo.</p></li>
@@ -1236,9 +1243,9 @@ Se utiliza especialmente para registrar edades de recién nacidos o niños peque
 </div>
 </section>
 <section id="imputacion-de-datos-nan">
-<h2>Imputación de datos NaN<a class="headerlink" href="#imputacion-de-datos-nan" title="Permalink to this heading">#</a></h2>
+<h2>Imputación de datos NaN<a class="headerlink" href="#imputacion-de-datos-nan" title="Link to this heading">#</a></h2>
 <section id="verificacion-de-etiquetas">
-<h3>Verificación de etiquetas<a class="headerlink" href="#verificacion-de-etiquetas" title="Permalink to this heading">#</a></h3>
+<h3>Verificación de etiquetas<a class="headerlink" href="#verificacion-de-etiquetas" title="Link to this heading">#</a></h3>
 <p>Antes de realizar la imputación, verificaremos las etiquetas de las variables categóricas una a una para verificar que no hayan errores de imputación:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1872,7 +1879,7 @@ Se utiliza especialmente para registrar edades de recién nacidos o niños peque
 </div>
 </section>
 <section id="imputacion">
-<h3>Imputación<a class="headerlink" href="#imputacion" title="Permalink to this heading">#</a></h3>
+<h3>Imputación<a class="headerlink" href="#imputacion" title="Link to this heading">#</a></h3>
 <p>Una vez verificado todas las etiquetas, procedamos con la imputación de los valores NaN en las variables que correspondan. Antes de realizar esto es necesario entender el contexto del dataset para realizar las imputaciones pertinentes, teniendo en cuenta de que la fecha de muerte no siempre tiene relación directa con muerte de covid, ya que registra la muerte aun si fue por otra causa después de recuperarse.</p>
 <p>Para este caso existen valores NaN relacionados con las muertes, para las variables ‘Recuperado’ y ‘Estado’ que tienen un valor para los fallecidos se uso la siguiente técnica, si existía fecha de recuperación, y alguno de los valores faltaba, se imputaba la moda respectiva. Si existia fecha de fallecimiento y no había fecha de recuperación sinigicaba que el paciente habia muerto de covid, por tanto si hacía falta un valor en este tipo de entrada, se reemplazaba con fallecido. Por último, si había fecha de recuperación y también fecha de muerte, se imputaba la moda en cualquier valor faltante, de esta manera se mantuvo la consistencia entre estas variables.</p>
 <p>Para el caso de ‘tipo de recuperación’, ya que esta solo aplica para personas que se recuperaron, por tanto tras la anterior imputación y teniendo definidio el número de pacientes que no se recuperó, este número se le asigna el valor categórico de ‘no aplica’, luego si hay fecha de recuperación y había NaN, se imputaba la moda.</p>
@@ -3181,7 +3188,7 @@ memory usage: 48.0+ MB
 </section>
 </section>
 <section id="analisis-univariado">
-<h2>Análisis Univariado<a class="headerlink" href="#analisis-univariado" title="Permalink to this heading">#</a></h2>
+<h2>Análisis Univariado<a class="headerlink" href="#analisis-univariado" title="Link to this heading">#</a></h2>
 <p>El análisis univariado permite examinar cada variable de manera individual con el fin de entender su distribución, frecuencia y comportamiento dentro del conjunto de datos. Esto permite identificar patrones generales, posibles valores atípicos y la composición de las categorías presentes en los datos.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -3194,7 +3201,7 @@ memory usage: 48.0+ MB
 </div>
 </div>
 <section id="edad">
-<h3>Edad<a class="headerlink" href="#edad" title="Permalink to this heading">#</a></h3>
+<h3>Edad<a class="headerlink" href="#edad" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_edad_años</span> <span class="o">=</span> <span class="n">df_limpio</span><span class="p">[</span><span class="n">df_limpio</span><span class="p">[</span><span class="s2">&quot;Unidad de medida de edad&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
@@ -3314,26 +3321,26 @@ Name: Edad, dtype: float64
 </div>
 </section>
 <section id="analisis-edad">
-<h3>Análisis Edad:<a class="headerlink" href="#analisis-edad" title="Permalink to this heading">#</a></h3>
+<h3>Análisis Edad:<a class="headerlink" href="#analisis-edad" title="Link to this heading">#</a></h3>
 <p>La variable <strong>Edad</strong> corresponde a una variable numérica que indica la edad de los individuos registrados en el conjunto de datos. Debido a que esta variable se encuentra expresada en diferentes unidades de medida (años, meses y días), el análisis se realiza por separado para cada una de estas categorías.</p>
 <section id="edad-en-anos">
-<h4>Edad en años<a class="headerlink" href="#edad-en-anos" title="Permalink to this heading">#</a></h4>
+<h4>Edad en años<a class="headerlink" href="#edad-en-anos" title="Link to this heading">#</a></h4>
 <p>Para los registros donde la edad está expresada en años se cuentan <strong>416,949 observaciones</strong>. La edad promedio es aproximadamente <strong>40.45 años</strong>, con una desviación estándar de <strong>19.37</strong>, lo que muestra una variabilidad considerable entre las edades registradas.</p>
 <p>La edad mínima observada es <strong>1 año</strong>, mientras que la máxima alcanza los <strong>113 años</strong>. En cuanto a los cuartiles, el 25% de los individuos tiene <strong>26 años o menos</strong>, la mediana se encuentra en <strong>38 años</strong>, y el 75% tiene <strong>54 años o menos</strong>. Esto sugiere que la mayor parte de los casos se concentra en edades adultas.</p>
 </section>
 <section id="edad-en-meses">
-<h4>Edad en meses<a class="headerlink" href="#edad-en-meses" title="Permalink to this heading">#</a></h4>
+<h4>Edad en meses<a class="headerlink" href="#edad-en-meses" title="Link to this heading">#</a></h4>
 <p>En los registros donde la edad está expresada en meses se tienen <strong>1,917 observaciones</strong>. La edad promedio es de aproximadamente <strong>5.58 meses</strong>, con una desviación estándar de <strong>3.15 meses</strong>.</p>
 <p>El valor mínimo registrado es <strong>1 mes</strong> y el máximo <strong>18 meses</strong>. Los cuartiles muestran que el 25% de los individuos tiene <strong>3 meses o menos</strong>, la mediana es de <strong>6 meses</strong>, y el 75% tiene <strong>8 meses o menos</strong>, lo que indica que la mayoría de los registros corresponde a bebés menores de un año.</p>
 </section>
 <section id="edad-en-dias">
-<h4>Edad en días<a class="headerlink" href="#edad-en-dias" title="Permalink to this heading">#</a></h4>
+<h4>Edad en días<a class="headerlink" href="#edad-en-dias" title="Link to this heading">#</a></h4>
 <p>Para los casos en los que la edad está registrada en días se cuentan <strong>195 observaciones</strong>. La edad promedio es de aproximadamente <strong>14.5 días</strong>, con una desviación estándar de <strong>8.82 días</strong>.</p>
 <p>El valor mínimo registrado es <strong>1 día</strong> y el máximo <strong>30 días</strong>. Los cuartiles indican que el 25% de los individuos tiene <strong>6 días o menos</strong>, la mediana es de <strong>15 días</strong>, y el 75% tiene <strong>21 días o menos</strong>, lo que refleja que estos registros corresponden principalmente a recién nacidos.</p>
 </section>
 </section>
 <section id="sexo">
-<h3>Sexo<a class="headerlink" href="#sexo" title="Permalink to this heading">#</a></h3>
+<h3>Sexo<a class="headerlink" href="#sexo" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_limpio</span><span class="p">[</span><span class="s2">&quot;Sexo&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -3371,14 +3378,14 @@ Name: Sexo, dtype: object
 </div>
 </div>
 <section id="analisis-sexo">
-<h4>Análisis Sexo:<a class="headerlink" href="#analisis-sexo" title="Permalink to this heading">#</a></h4>
+<h4>Análisis Sexo:<a class="headerlink" href="#analisis-sexo" title="Link to this heading">#</a></h4>
 <p>La variable <strong>Sexo</strong> es una variable categórica que indica el sexo de los individuos registrados en el conjunto de datos.</p>
 <p>En total se registran <strong>419,061 observaciones</strong> para esta variable, con <strong>dos categorías únicas</strong>. La categoría más frecuente es <strong>F (femenino)</strong> con <strong>222,971 registros</strong>, lo que representa la mayor proporción de los casos en el conjunto de datos.</p>
 <p>Esto indica que, dentro de los datos analizados, la participación de individuos de sexo femenino es ligeramente mayor en comparación con el sexo masculino. La distribución observada puede apreciarse de forma más clara en el gráfico de barras presentado en el análisis exploratorio.</p>
 </section>
 </section>
 <section id="pertenencia-etnica">
-<h3>Pertenencia Étnica<a class="headerlink" href="#pertenencia-etnica" title="Permalink to this heading">#</a></h3>
+<h3>Pertenencia Étnica<a class="headerlink" href="#pertenencia-etnica" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_limpio</span><span class="p">[</span><span class="s2">&quot;Pertenencia étnica&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -3436,7 +3443,7 @@ Name: proportion, dtype: float64
 </div>
 </div>
 <section id="analisis-pertenencia-etnica">
-<h4>Análisis Pertenencia étnica:<a class="headerlink" href="#analisis-pertenencia-etnica" title="Permalink to this heading">#</a></h4>
+<h4>Análisis Pertenencia étnica:<a class="headerlink" href="#analisis-pertenencia-etnica" title="Link to this heading">#</a></h4>
 <p>La variable <strong>Pertenencia étnica</strong> es una variable categórica codificada numéricamente que identifica el grupo étnico al que pertenece cada individuo dentro del conjunto de datos.</p>
 <p>A partir de los estadísticos descriptivos se observa que hay <strong>419,061 registros</strong> para esta variable. La media es aproximadamente <strong>5.88</strong> y la desviación estándar es <strong>0.63</strong>, lo que ya sugiere que la mayoría de los valores se concentran cerca de la categoría <strong>6</strong>. Además, los cuartiles (25%, 50% y 75%) también toman el valor <strong>6</strong>, lo que confirma que esta categoría domina claramente la distribución.</p>
 <p>Al observar la distribución porcentual, se encuentra que la gran mayoría de los registros corresponde a la categoría <strong>6</strong>, con aproximadamente <strong>94.44%</strong> de los casos. En menor proporción aparece la categoría <strong>5</strong> con alrededor de <strong>4.06%</strong>, seguida por la categoría <strong>1</strong> con <strong>1.49%</strong>. Las categorías <strong>2</strong> y <strong>3</strong> aparecen con una frecuencia extremadamente baja dentro del conjunto de datos.</p>
@@ -3444,7 +3451,7 @@ Name: proportion, dtype: float64
 </section>
 </section>
 <section id="variables-temporales">
-<h3>Variables temporales<a class="headerlink" href="#variables-temporales" title="Permalink to this heading">#</a></h3>
+<h3>Variables temporales<a class="headerlink" href="#variables-temporales" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">variables_tiempo</span> <span class="o">=</span> <span class="p">[</span>
@@ -3605,7 +3612,7 @@ Name: proportion, dtype: float64
 </div></div></div>
 </div>
 <section id="analisis-variables-temporales">
-<h4>Análisis Variables temporales:<a class="headerlink" href="#analisis-variables-temporales" title="Permalink to this heading">#</a></h4>
+<h4>Análisis Variables temporales:<a class="headerlink" href="#analisis-variables-temporales" title="Link to this heading">#</a></h4>
 <p>Las <strong>variables temporales</strong> del conjunto de datos describen los diferentes momentos del proceso de registro de un caso de COVID-19, como el reporte, la notificación, el inicio de síntomas, el diagnóstico y la recuperación. Estas variables permiten entender cómo se distribuyen los casos a lo largo del tiempo dentro del dataset.</p>
 <p>En total se observan <strong>419,061 registros</strong> para las variables de <strong>año y día de reporte y notificación</strong>, mientras que algunas variables como <strong>inicio de síntomas, diagnóstico y recuperación</strong> tienen una cantidad ligeramente menor de registros debido a la presencia de algunos valores faltantes.</p>
 <p>En cuanto al <strong>año</strong>, la mayoría de los registros se concentran en <strong>2021</strong>, ya que el valor de la mediana y de los cuartiles también corresponde a este año en casi todas las variables temporales. Sin embargo, el rango de los datos va aproximadamente desde <strong>2020 hasta 2024</strong>, lo que indica que el dataset incluye registros de varios años del seguimiento de la pandemia.</p>
@@ -3614,7 +3621,7 @@ Name: proportion, dtype: float64
 </section>
 </section>
 <section id="variables-acerca-el-estado">
-<h3>Variables acerca el estado<a class="headerlink" href="#variables-acerca-el-estado" title="Permalink to this heading">#</a></h3>
+<h3>Variables acerca el estado<a class="headerlink" href="#variables-acerca-el-estado" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">variables_estado</span> <span class="o">=</span> <span class="p">[</span>
@@ -3685,7 +3692,7 @@ Name: count, dtype: int64
 </div>
 </div>
 <section id="analisis-variables-relacionadas-con-el-estado-del-caso">
-<h4>Análisis Variables relacionadas con el estado del caso:<a class="headerlink" href="#analisis-variables-relacionadas-con-el-estado-del-caso" title="Permalink to this heading">#</a></h4>
+<h4>Análisis Variables relacionadas con el estado del caso:<a class="headerlink" href="#analisis-variables-relacionadas-con-el-estado-del-caso" title="Link to this heading">#</a></h4>
 <p>Estas variables describen la <strong>condición clínica del paciente, el tipo de contagio y el proceso de recuperación</strong> de los casos registrados en el conjunto de datos.</p>
 <p>En la variable <strong>Tipo de contagio</strong>, la mayoría de los casos corresponden a contagio <strong>Comunitaria</strong> con <strong>288,243 registros</strong>, seguido por <strong>Relacionado</strong> con <strong>130,744 casos</strong>. Los casos <strong>Importados</strong> son muy pocos, con solo <strong>74 registros</strong>, lo que indica que la gran mayoría de los contagios se dieron dentro de la misma comunidad.</p>
 <p>Respecto a la <strong>Ubicación del caso</strong>, la mayor parte de los pacientes se encontraban en <strong>Casa</strong> con <strong>406,341 registros</strong>, lo que sugiere que la mayoría de los casos fueron manejados de forma ambulatoria. También aparecen <strong>12,682 registros asociados a fallecidos</strong>, mientras que los casos en <strong>Hospital (35)</strong> y <strong>Hospital UCI (3)</strong> representan una proporción muy pequeña dentro del dataset.</p>
@@ -3696,7 +3703,7 @@ Name: count, dtype: int64
 </section>
 </section>
 <section id="variable-geografica">
-<h3>Variable geográfica<a class="headerlink" href="#variable-geografica" title="Permalink to this heading">#</a></h3>
+<h3>Variable geográfica<a class="headerlink" href="#variable-geografica" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_limpio</span><span class="p">[</span><span class="s2">&quot;Código DIVIPOLA municipio&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -3752,7 +3759,7 @@ Name: count, dtype: int64
 </div>
 </div>
 <section id="analisis-codigo-divipola-municipio">
-<h4>Análisis Código DIVIPOLA municipio:<a class="headerlink" href="#analisis-codigo-divipola-municipio" title="Permalink to this heading">#</a></h4>
+<h4>Análisis Código DIVIPOLA municipio:<a class="headerlink" href="#analisis-codigo-divipola-municipio" title="Link to this heading">#</a></h4>
 <p>La variable <strong>Código DIVIPOLA municipio</strong> permite identificar el municipio del departamento del Atlántico donde fue registrado cada caso. Al observar la distribución de esta variable, se nota que los casos se encuentran repartidos entre varios municipios del departamento.</p>
 <p>Dentro del conjunto de datos aparecen municipios como <strong>Barranquilla (08001)</strong>, <strong>Soledad (08758)</strong>, <strong>Malambo (08433)</strong>, <strong>Sabanalarga (08638)</strong>, <strong>Puerto Colombia (08573)</strong>, <strong>Galapa (08296)</strong>, <strong>Baranoa (08078)</strong>, <strong>Santo Tomás (08685)</strong>, <strong>Sabanagrande (08634)</strong>, <strong>Palmar de Varela (08520)</strong>, entre otros municipios del Atlántico.</p>
 <p>En general, la distribución muestra que los registros se concentran principalmente en los municipios más poblados del departamento y en el área metropolitana de Barranquilla. Esto es coherente con lo esperado, ya que en estas zonas existe mayor densidad poblacional y movilidad de personas, lo que puede favorecer una mayor cantidad de casos reportados.</p>
@@ -3760,10 +3767,10 @@ Name: count, dtype: int64
 </section>
 </section>
 <section id="analisis-bivariado">
-<h2>Análisis Bivariado<a class="headerlink" href="#analisis-bivariado" title="Permalink to this heading">#</a></h2>
+<h2>Análisis Bivariado<a class="headerlink" href="#analisis-bivariado" title="Link to this heading">#</a></h2>
 </section>
 <section id="analisis-de-la-variable-de-respuesta-frente-a-las-variables-numericas">
-<h2>Análisis de la variable de respuesta frente a las variables numéricas<a class="headerlink" href="#analisis-de-la-variable-de-respuesta-frente-a-las-variables-numericas" title="Permalink to this heading">#</a></h2>
+<h2>Análisis de la variable de respuesta frente a las variables numéricas<a class="headerlink" href="#analisis-de-la-variable-de-respuesta-frente-a-las-variables-numericas" title="Link to this heading">#</a></h2>
 <p>Se realizará la comparación de la variable “Estado” correspondiente al estado de salud del paciente con Covid-19 en dicha fecha. En este caso, la variable de respuesta tiene 4 categorias: Leve, Fallecito, Moderado y Grave;por tanto, se tomarán estos 4 grupos y se analizará frente a la unica variable numérica, “Edad”, con un diagrama de cajas y bigotes, una tabla para comparación de la distribuciones y una prueba de igualdad de medidas de tendencia central.<br />
 Veamos cómo es el comportamiento de Edad según el estado, diferenciando en la unidad de medida de edad</p>
 <div class="cell docutils container">
@@ -3834,7 +3841,7 @@ Name: Edad, dtype: float64
 </div>
 <p>Con lo observado anteriormente, en esta sección se realizarán dos análisis porque en la variable se encuentran bebés donde su edad está expresada con un número pero depende de la variable “Unidad de medida de edad”. Entonces se deben hacer un pequeño análisis con estos casos que no son más de 2112, correspondiende a bebés con edad menor a 18 meses, por tanto, los que son mayores de 18 meses se clasifican en el otro grupo y aparecen con edad de 1 año.</p>
 <section id="grafico-de-cajas-y-bigotes-multiple-para-mayores-de-18-meses">
-<h3>Gráfico de cajas y bigotes multiple para mayores de 18 meses<a class="headerlink" href="#grafico-de-cajas-y-bigotes-multiple-para-mayores-de-18-meses" title="Permalink to this heading">#</a></h3>
+<h3>Gráfico de cajas y bigotes multiple para mayores de 18 meses<a class="headerlink" href="#grafico-de-cajas-y-bigotes-multiple-para-mayores-de-18-meses" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
@@ -3876,7 +3883,7 @@ Asimismo, se puede observar que en el grupo de personas con estado leve tiene va
 De la misma manera, todos los grupos separados por el estado del paciente tienen distribuciones sesgadas, primeramente el grupo de estado leve tienen asimetría hacia la derecha y el grupo de fallecidos tienen asimetria hacia la izquierda. Cabe resaltar, que el grupo de Moderado y Grave no se le puede hacer mucho análisis descriptivo porque son muy pocos datos, 21 y 3 respectivamente, lo cual es poca la información de cómo es la distribución de estos grupos.</p>
 </section>
 <section id="comparacion-de-medidas-de-tendencia-central-para-mayores-de-18-meses">
-<h3>Comparación de medidas de tendencia central para mayores de 18 meses<a class="headerlink" href="#comparacion-de-medidas-de-tendencia-central-para-mayores-de-18-meses" title="Permalink to this heading">#</a></h3>
+<h3>Comparación de medidas de tendencia central para mayores de 18 meses<a class="headerlink" href="#comparacion-de-medidas-de-tendencia-central-para-mayores-de-18-meses" title="Link to this heading">#</a></h3>
 <p>Gracias a lo anterior, se realizará el análisis de las medidas de tendencia central para la edad según el Estado del individuo.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -4019,7 +4026,7 @@ La tabla presenta estadísticas descriptivas de la edad de los pacientes según 
 <p>En contraste, los pacientes fallecidos (12660) presentan una edad media considerablemente mayor (68.35 años) y una mediana de 70 años, lo que evidencia una mayor concentración de muertes en adultos mayores. Los estados moderado (21 casos) y grave (3 casos) muestran medias de edad de 31.81 y 58.33 años, respectivamente; sin embargo, estos grupos tienen tamaños de muestra muy pequeños, por lo que sus resultados deben interpretarse con cautela. En general, los datos sugieren que la edad más avanzada está asociada con desenlaces más graves o fatales en pacientes con COVID-19, lo cual, reafirma lo dicho en el gráfico.</p>
 </section>
 <section id="pruebas-de-normalidad-de-ambos-grupos-mayores-de-18-meses">
-<h3>Pruebas de normalidad de ambos grupos (mayores de 18 meses)<a class="headerlink" href="#pruebas-de-normalidad-de-ambos-grupos-mayores-de-18-meses" title="Permalink to this heading">#</a></h3>
+<h3>Pruebas de normalidad de ambos grupos (mayores de 18 meses)<a class="headerlink" href="#pruebas-de-normalidad-de-ambos-grupos-mayores-de-18-meses" title="Link to this heading">#</a></h3>
 <p>Debido a las pocas observaciones que presentan los grupos con estado moderado y grave, se realizará la prueba de normalidad solo a los grupos con estado leve y fallecidos, para ello, se realizará la prueba de Anderson-Darling porque las muestras son grandes y con asimetría pronunciada.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -4058,7 +4065,7 @@ Resultado: Rechaza H0 (no normal)
 <p>Con un nivel de confianza del 95% y dado que en ambas pruebas el estadístico es mayor que el valor crítico, se rechaza la hipótesis nula y los datos no son normales.</p>
 </section>
 <section id="test-de-wilcoxon-mayores-de-18-meses">
-<h3>Test de Wilcoxon (mayores de 18 meses)<a class="headerlink" href="#test-de-wilcoxon-mayores-de-18-meses" title="Permalink to this heading">#</a></h3>
+<h3>Test de Wilcoxon (mayores de 18 meses)<a class="headerlink" href="#test-de-wilcoxon-mayores-de-18-meses" title="Link to this heading">#</a></h3>
 <p>Se quiere evaluar estadísticamente si existe diferencias en la edad entre los pacientes con estado leve y fallecido, para ello se aplicará el test de Wilcoxon porque es no paramétrico y responde a grupos que no siguen una distribución normal.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -4090,7 +4097,7 @@ Se rechaza H0: existe diferencia significativa entre las edades de los grupos.
 <p>Dado que el p-valor es menor que 0.05, se rechaza la hipótesis nula (H₀). Esto indica que existe una diferencia estadísticamente significativa en la edad entre los pacientes con estado leve y los pacientes fallecidos, lo que confirma que la distribución de las edades no es la misma en ambos grupos.</p>
 </section>
 <section id="grafico-de-cajas-y-bigotes-multiple-y-comparacion-de-medidas-de-tendencia-central-para-mayores-de-un-mes-y-menores-de-18-meses-de-vida">
-<h3>Gráfico de cajas y bigotes multiple y comparación de medidas de tendencia central para mayores de un mes y menores de 18 meses de vida<a class="headerlink" href="#grafico-de-cajas-y-bigotes-multiple-y-comparacion-de-medidas-de-tendencia-central-para-mayores-de-un-mes-y-menores-de-18-meses-de-vida" title="Permalink to this heading">#</a></h3>
+<h3>Gráfico de cajas y bigotes multiple y comparación de medidas de tendencia central para mayores de un mes y menores de 18 meses de vida<a class="headerlink" href="#grafico-de-cajas-y-bigotes-multiple-y-comparacion-de-medidas-de-tendencia-central-para-mayores-de-un-mes-y-menores-de-18-meses-de-vida" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#df_bebes=df_limpio[(df_limpio[&quot;Unidad de medida de edad&quot;]==1)]</span>
@@ -4244,7 +4251,7 @@ Se rechaza H0: existe diferencia significativa entre las edades de los grupos.
 </ul>
 </section>
 <section id="grafico-de-cajas-y-bigotes-multiple-y-comparacion-de-medidas-de-tendencia-central-para-menores-de-un-mes-de-vida">
-<h3>Gráfico de cajas y bigotes multiple y comparación de medidas de tendencia central para menores de un mes de vida<a class="headerlink" href="#grafico-de-cajas-y-bigotes-multiple-y-comparacion-de-medidas-de-tendencia-central-para-menores-de-un-mes-de-vida" title="Permalink to this heading">#</a></h3>
+<h3>Gráfico de cajas y bigotes multiple y comparación de medidas de tendencia central para menores de un mes de vida<a class="headerlink" href="#grafico-de-cajas-y-bigotes-multiple-y-comparacion-de-medidas-de-tendencia-central-para-menores-de-un-mes-de-vida" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
@@ -4397,25 +4404,25 @@ Se rechaza H0: existe diferencia significativa entre las edades de los grupos.
 </section>
 </section>
 <section id="analisis-de-la-variable-de-respuesta-frente-a-las-variables-categoricas">
-<h2>Análisis de la variable de respuesta frente a las variables categóricas<a class="headerlink" href="#analisis-de-la-variable-de-respuesta-frente-a-las-variables-categoricas" title="Permalink to this heading">#</a></h2>
+<h2>Análisis de la variable de respuesta frente a las variables categóricas<a class="headerlink" href="#analisis-de-la-variable-de-respuesta-frente-a-las-variables-categoricas" title="Link to this heading">#</a></h2>
 <section id="variable-fecha-reporte-web">
-<h3>Variable “fecha reporte web”<a class="headerlink" href="#variable-fecha-reporte-web" title="Permalink to this heading">#</a></h3>
+<h3>Variable “fecha reporte web”<a class="headerlink" href="#variable-fecha-reporte-web" title="Link to this heading">#</a></h3>
 <p>La variable fecha de reporte web se excluyó del análisis bivariado con la variable de respuesta estado del paciente (leve, moderado, grave o fallecido), ya que corresponde a una variable temporal asociada al registro administrativo de los casos dentro del sistema de vigilancia epidemiológica. Esta variable indica el momento en que la información fue cargada en la plataforma, pero no representa una característica clínica, demográfica o epidemiológica del paciente que pueda influir directamente en su estado de salud, por lo que no aporta información relevante para el análisis de asociación.</p>
 </section>
 <section id="variable-fecha-de-notificacion">
-<h3>Variable “Fecha de notificación”<a class="headerlink" href="#variable-fecha-de-notificacion" title="Permalink to this heading">#</a></h3>
+<h3>Variable “Fecha de notificación”<a class="headerlink" href="#variable-fecha-de-notificacion" title="Link to this heading">#</a></h3>
 <p>De manera similar, la fecha de notificación también fue excluida del análisis bivariado con la variable estado del paciente, debido a que se trata de una variable temporal relacionada con el proceso de reporte de los casos a las autoridades de salud. Esta fecha depende del flujo de notificación del sistema de vigilancia y no refleja características propias del paciente ni factores asociados a la gravedad de la enfermedad, por lo que su inclusión no resulta pertinente para evaluar la relación con la variable de respuesta.</p>
 </section>
 <section id="variable-codigo-divipola-municipio">
-<h3>Variable Código DIVIPOLA municipio<a class="headerlink" href="#variable-codigo-divipola-municipio" title="Permalink to this heading">#</a></h3>
+<h3>Variable Código DIVIPOLA municipio<a class="headerlink" href="#variable-codigo-divipola-municipio" title="Link to this heading">#</a></h3>
 <p>La variable Código DIVIPOLA municipio se excluyó del análisis bivariado con la variable de respuesta estado del paciente (leve, moderado, grave o fallecido) debido a que corresponde a un código identificador administrativo utilizado para clasificar los municipios en Colombia. Esta variable funciona únicamente como un identificador geográfico y no representa una característica demográfica, clínica o epidemiológica del paciente. Por esta razón, su inclusión no aporta información relevante para evaluar la asociación con el estado del paciente, siendo más apropiado utilizar variables geográficas categóricas interpretables, como el nombre del municipio o departamento, en caso de requerir análisis territoriales.</p>
 </section>
 <section id="variable-unidad-de-medida-de-edad">
-<h3>Variable Unidad de medida de edad<a class="headerlink" href="#variable-unidad-de-medida-de-edad" title="Permalink to this heading">#</a></h3>
+<h3>Variable Unidad de medida de edad<a class="headerlink" href="#variable-unidad-de-medida-de-edad" title="Link to this heading">#</a></h3>
 <p>Esta variable ya fue analizada junto a la variable Edad, entonces no es necesario un analisis exhaustivo porque no aporta nada frente a la variable de respuesta Estado.</p>
 </section>
 <section id="variable-sexo">
-<h3>Variable Sexo<a class="headerlink" href="#variable-sexo" title="Permalink to this heading">#</a></h3>
+<h3>Variable Sexo<a class="headerlink" href="#variable-sexo" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tabla de distribución de sexo según Estado del paciente</span>
@@ -4573,7 +4580,7 @@ Grados de libertad: 3
 <p>Existe una relación estadísticamente significativa entre el sexo y el estado clínico de los pacientes en el Atlántico. Con un P-valor de prácticamente cero y un estadístico de 517.19, se confirma que la gravedad de la enfermedad no se distribuye de forma aleatoria entre hombres y mujeres, sugiriendo que el género es un factor determinante en la evolución clínica de los casos en el departamento.</p>
 </section>
 <section id="variable-tipo-de-contagio">
-<h3>Variable Tipo de contagio<a class="headerlink" href="#variable-tipo-de-contagio" title="Permalink to this heading">#</a></h3>
+<h3>Variable Tipo de contagio<a class="headerlink" href="#variable-tipo-de-contagio" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabla_contagio</span> <span class="o">=</span> <span class="p">(</span>
@@ -4728,7 +4735,7 @@ Grados de libertad: 6
 <p>Existe una relación estadísticamente significativa entre el tipo de contagio y el estado clínico de los pacientes en el Atlántico. Con un P-valor de prácticamente cero y un estadístico de 525.39, se confirma que la gravedad de la enfermedad no se distribuye de forma aleatoria según el origen de la infección, sugiriendo que el tipo de contagio (especialmente el comunitario) es un factor determinante en la evolución clínica y la mortalidad de los casos en el departamento.</p>
 </section>
 <section id="variable-ubicacion-del-caso">
-<h3>Variable Ubicación del caso<a class="headerlink" href="#variable-ubicacion-del-caso" title="Permalink to this heading">#</a></h3>
+<h3>Variable Ubicación del caso<a class="headerlink" href="#variable-ubicacion-del-caso" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabla_ubicacion</span> <span class="o">=</span> <span class="p">(</span>
@@ -4795,7 +4802,7 @@ Grados de libertad: 6
 <p>La distribución de la Ubicación del caso según el estado clínico del paciente revela una segmentación absoluta en los patrones de atención en el Atlántico. Entre los casos donde el paciente Falleció, el 100% de los registros corresponden a la categoría de ubicación Fallecido (12,682 casos), mientras que en el grupo de pacientes con estado Leve, la totalidad de los individuos (100%) fueron atendidos en Casa (406,341 casos). En contraste, los niveles de mayor complejidad clínica muestran que los pacientes en estado Moderado se encuentran exclusivamente en Hospital (35 casos) y los pacientes en estado Grave fueron dirigidos en su totalidad a Hospital UCI (3 casos). Esta correspondencia perfecta indica que la ubicación del paciente en el dataset funciona como un reflejo directo de la severidad clínica, confirmando que el sistema de salud del departamento clasificó y distribuyó la carga asistencial de manera estrictamente vinculada a la gravedad del cuadro de cada individuo. Por tanto, no es necesario seguir haciendo el analisis de estas dos variables porque no da mucha información adicional.</p>
 </section>
 <section id="variable-recuperado">
-<h3>Variable Recuperado<a class="headerlink" href="#variable-recuperado" title="Permalink to this heading">#</a></h3>
+<h3>Variable Recuperado<a class="headerlink" href="#variable-recuperado" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabla_recuperado</span> <span class="o">=</span> <span class="p">(</span>
@@ -4869,19 +4876,19 @@ Grados de libertad: 6
 <p>La distribución del estado Recuperado según la condición clínica del paciente muestra una correlación directa entre el proceso de alta y la severidad inicial en el Atlántico. Entre los casos registrados como Fallecidos, el 100% (12,682 casos) se clasifican como Fallecido, mientras que en el grupo de pacientes con estado Leve, la inmensa mayoría de 99.99% (406,317 casos) logró la recuperación, quedando solo un residual de 24 casos (0.01%) aún en estado Activo. Por su parte, en los niveles de mayor complejidad, se observa que el 100% de los casos Moderados (35 registros) y Graves (3 registros) permanecen como casos Activos. Esta segmentación confirma que la recuperación fue el desenlace casi universal para los cuadros leves, mientras que la gravedad clínica y la mortalidad definieron de manera estricta el estatus final del paciente en los registros del departamento. Por tanto, no es necesario seguir haciendo el analisis de estas dos variables porque no da mucha información adicional.</p>
 </section>
 <section id="variable-fecha-de-inicio-de-sintomas">
-<h3>Variable Fecha de inicio de síntomas<a class="headerlink" href="#variable-fecha-de-inicio-de-sintomas" title="Permalink to this heading">#</a></h3>
+<h3>Variable Fecha de inicio de síntomas<a class="headerlink" href="#variable-fecha-de-inicio-de-sintomas" title="Link to this heading">#</a></h3>
 <p>La variable fecha de inicio de síntomas se excluyó del análisis bivariado con la variable de respuesta estado del paciente, ya que, al ser una variable de naturaleza temporal, su función principal es marcar el inicio cronológico de la enfermedad. Si bien es fundamental para construir curvas epidemiológicas, no constituye una característica biológica o demográfica del individuo que determine por sí misma la gravedad del cuadro. Al tratarse de una serie de puntos en el tiempo y no de un factor de riesgo cualitativo, su inclusión en pruebas de asociación no aportaría información relevante para identificar los determinantes clínicos que influyen en el desenlace del paciente.</p>
 </section>
 <section id="variable-fecha-de-diagnostico">
-<h3>Variable Fecha de diagnóstico<a class="headerlink" href="#variable-fecha-de-diagnostico" title="Permalink to this heading">#</a></h3>
+<h3>Variable Fecha de diagnóstico<a class="headerlink" href="#variable-fecha-de-diagnostico" title="Link to this heading">#</a></h3>
 <p>La variable fecha de diagnóstico se excluyó del análisis bivariado con el estado del paciente, ya que es un dato cronológico que indica únicamente el momento en que se confirmó la presencia del virus mediante una prueba de laboratorio. Al ser una variable de registro temporal, no constituye un factor de riesgo biológico ni una característica clínica que determine la gravedad del cuadro, por lo que su inclusión no aporta información relevante para identificar las causas de la mortalidad o severidad en el departamento.</p>
 </section>
 <section id="variable-fecha-de-recuperacion">
-<h3>Variable Fecha de recuperación<a class="headerlink" href="#variable-fecha-de-recuperacion" title="Permalink to this heading">#</a></h3>
+<h3>Variable Fecha de recuperación<a class="headerlink" href="#variable-fecha-de-recuperacion" title="Link to this heading">#</a></h3>
 <p>La variable fecha de recuperación se excluyó del análisis bivariado con la variable de respuesta estado del paciente, debido a que representa un evento posterior al desenlace clínico y está condicionada administrativamente al estado previo del individuo. Al tratarse de una marca de tiempo que solo existe para quienes superaron la enfermedad, su uso en pruebas de asociación resultaría redundante y no permitiría identificar atributos demográficos o epidemiológicos que influyan originalmente en la evolución hacia un estado leve o crítico.</p>
 </section>
 <section id="variable-tipo-de-recuperacion">
-<h3>Variable Tipo de recuperación<a class="headerlink" href="#variable-tipo-de-recuperacion" title="Permalink to this heading">#</a></h3>
+<h3>Variable Tipo de recuperación<a class="headerlink" href="#variable-tipo-de-recuperacion" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabla_tiporec</span> <span class="o">=</span> <span class="p">(</span>
@@ -4955,7 +4962,7 @@ Grados de libertad: 6
 <p>La distribución del Tipo de recuperación según el estado clínico en el Atlántico refleja una segmentación puramente administrativa y procedimental. Mientras que en los casos fallecidos la categoría es unánimemente No aplica (100%), en los pacientes leves predomina la recuperación por Tiempo con un 75.96% (308,672 casos) sobre el uso de pruebas Pcr (24.04%). Por su parte, los estados moderado y grave se asocian exclusivamente a la recuperación por tiempo (100%), confirmando que esta variable depende directamente de los protocolos de alta y el desenlace clínico del paciente. Por tanto, su análisis no aporta información epidemiológica adicional relevante para identificar factores de riesgo externos.</p>
 </section>
 <section id="variable-pertenencia-etnica">
-<h3>Variable Pertenencia étnica<a class="headerlink" href="#variable-pertenencia-etnica" title="Permalink to this heading">#</a></h3>
+<h3>Variable Pertenencia étnica<a class="headerlink" href="#variable-pertenencia-etnica" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabla_etnia</span> <span class="o">=</span> <span class="p">(</span>
@@ -5066,7 +5073,7 @@ Grados de libertad: 6
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="modelo-basico-de-regresion-logistica">
-<h1>Modelo básico de Regresión Logistica<a class="headerlink" href="#modelo-basico-de-regresion-logistica" title="Permalink to this heading">#</a></h1>
+<h1>Modelo básico de Regresión Logistica<a class="headerlink" href="#modelo-basico-de-regresion-logistica" title="Link to this heading">#</a></h1>
 <p>Se verificará el score del modelo de represión logística para predecir la variable de respuesta de Estado del paciente dependiendo de las variables restantes, cabe resaltar que al tener pocas observaciones con estado moderado y grave, el modelo será binario y buscará predecir el si la persona fallece o tendrá síntomas leves, además se dividirá el dataset con un 80% para train y 20% test.<br />
 Dado que es un modelo sencillo y en la variable de respuesta las categorías están desbalanceadas, se reducirá el número de observaciones de la categoría “leve” para que tenga la misma frecuencia que las de estado “fallecido”, en este caso se quieren igualar a 12682.</p>
 <div class="cell docutils container">
@@ -5169,7 +5176,7 @@ weighted avg       0.80      0.80      0.80      5073
 <p>Sin embargo, la matriz de confusión revela que todavía existe un margen de error importante en los falsos negativos y falsos positivos (567 y 442 casos). En un contexto médico o de salud pública, el recall de la clase 1 (0.78) es la métrica crítica, ya que implica que el modelo no logra detectar aproximadamente al 22% de las personas fallecidas, clasificándolas erróneamente como casos leves. En pocas palabras, al estar en un contexto médico es necesario subir estás metricas porque es posible que 567 personas fallezcan si no se detecta a tiempo.</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="conclusiones">
-<h1>Conclusiones<a class="headerlink" href="#conclusiones" title="Permalink to this heading">#</a></h1>
+<h1>Conclusiones<a class="headerlink" href="#conclusiones" title="Link to this heading">#</a></h1>
 <p>El análisis epidemiológico en el Atlántico confirma que el sexo y el tipo de contagio son determinantes críticos en la severidad de la enfermedad. Mientras las mujeres representan la mayoría de los casos leves (53.5%), la mortalidad muestra una clara inclinación hacia los hombres, quienes concentran el 56.7% de los fallecimientos. Esta vulnerabilidad masculina se complementa con el impacto del contagio comunitario, el cual no solo fue el motor principal de la pandemia, sino que incrementó su peso proporcional del 68.5% en estados leves al 77.9% en los fatales, abarcando además la totalidad de los casos moderados y graves registrados.</p>
 <p>Por otro lado, la gestión hospitalaria y los protocolos de salida demostraron una segmentación administrativa absoluta y coherente con la gravedad del paciente. El sistema de salud logró una correspondencia del 100% entre el estado clínico y la ubicación (leves en casa y críticos en UCI), utilizando la recuperación por tiempo como el principal mecanismo de alta para el 75.9% de los casos. Finalmente, la pertenencia étnica no evidenció disparidades significativas en la evolución clínica, manteniendo una distribución homogénea del 94.4% en la categoría “Otro” para todos los niveles de severidad, lo que sugiere que el impacto del virus se distribuyó de manera uniforme bajo los patrones de registro demográfico actuales del departamento.</p>
 </section>
@@ -5210,7 +5217,7 @@ weighted avg       0.80      0.80      0.80      5073
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+        <p class="prev-next-title">Clasificación del Estado Clínico de Pacientes COVID-19 en el Atlántico</p>
       </div>
     </a>
     <a class="right-next"
@@ -5342,7 +5349,7 @@ By The Jupyter Book Community
 
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>

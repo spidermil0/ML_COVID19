@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Modelos a integrar en el dataset &#8212; My sample book</title>
   
@@ -29,39 +28,35 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Evaluacion_Modelos_SOTA';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -162,13 +157,24 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Clasificación del Estado Clínico de Pacientes COVID-19 en el Atlántico
                 </a>
             </li>
         </ul>
@@ -209,9 +215,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -352,9 +358,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -390,6 +396,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-y-recomendacion">Conclusión y Recomendación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias">Referencias:</a></li>
 </ul>
             </nav>
         </div>
@@ -402,7 +409,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="modelos-a-integrar-en-el-dataset">
-<h1>Modelos a integrar en el dataset<a class="headerlink" href="#modelos-a-integrar-en-el-dataset" title="Permalink to this heading">#</a></h1>
+<h1>Modelos a integrar en el dataset<a class="headerlink" href="#modelos-a-integrar-en-el-dataset" title="Link to this heading">#</a></h1>
 <p>Una vez definidos los métodos de optimización y de balanceo, se procederá a utilizarlos con los modelos seleccionados para ser integrados dentro del dataset, con el motivo de experimentar su eficiencia en campos donde su aplicación no ha sido común según la investigación realizada. Con el fin de realizar esto se hará una modificación del pipeline de optimización original para que ejecute únicamente el método de optimización ‘Random_Search’ junto al método de balanceo por peso ‘Weights’:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1314,7 +1321,7 @@ Métrica de optimización: recall
 </div>
 <p>Como resultado, el nuevo pipeline ejecutará el ciclo con el método de balanceo ‘weights’ y el método de balanceo base, es decir, sin balanceo, junto con el modelo sin optimizar hiperparámetros ‘baseline’ y el método de optimización ‘Random_Search’.</p>
 <section id="lightgbm-cost-sensitive">
-<h2>LightGBM-Cost Sensitive<a class="headerlink" href="#lightgbm-cost-sensitive" title="Permalink to this heading">#</a></h2>
+<h2>LightGBM-Cost Sensitive<a class="headerlink" href="#lightgbm-cost-sensitive" title="Link to this heading">#</a></h2>
 <p>LightGBM (Light Gradient Boosting Machine) es un algoritmo de boosting basado en arboles de decision que fue disenado para ser muy rapido y eficiente con datasets grandes. A diferencia de XGBoost, LightGBM crece los arboles hoja por hoja en lugar de nivel por nivel, lo que lo hace mas eficiente en memoria y velocidad sin perder precision.</p>
 <p>Por que sirve para nuestro problema: LightGBM tiene un parametro llamado scale_pos_weight que permite asignarle mas peso a la clase minoritaria durante el entrenamiento. Con un ratio de 32:1, se le podria asignar ese peso a los casos de Fallecido para que el modelo no los ignore. Yalcin et al. (G9) demostraron que LightGBM con SMOTE logra 99% de accuracy en clasificacion medica con desbalanceo, superando a SVM, KNN y Gradient Boosting. Adicionalmente, con 419.016 registros, LightGBM es mucho mas rapido que otros modelos para entrenar. La busqueda de verificacion en WoS con COVID-19, LightGBM y cost-sensitive dio 0 resultados, lo que confirma que no se ha explorado esta combinacion especifica para prediccion de mortalidad por COVID-19.</p>
 <p>Para la implementación de LightGBM dentro del pipeline de optimización, se construye un clasificador LGBMClassifier configurado con boosting_type=’gbdt’ y objective=’binary’, donde el parámetro num_leaves reemplaza a max_depth como controlador principal de la complejidad del árbol dado el crecimiento leaf-wise característico del algoritmo. El manejo del desbalanceo se realiza mediante scale_pos_weight, que se fija en el ratio natural n_leve/n_fallecido cuando el método de balanceo es weights. El espacio de búsqueda incluye ocho hiperparámetros: n_estimators, num_leaves, learning_rate, subsample, colsample_bytree, min_child_samples, reg_alpha y reg_lambda, explorados por el método de optimización ‘Random_Search’ con rangos equivalentes a los usados en XGBoost, añadiendo scale_pos_weight como noveno hiperparámetro únicamente cuando el balanceador activo es weights, garantizando que no haya doble corrección del desbalanceo en los demás métodos.</p>
@@ -1706,7 +1713,7 @@ baseline sin_balanceo   0.044550   0.272356     0.046136     0.280661
 </div>
 </section>
 <section id="balanced-random-forest">
-<h2>Balanced Random-Forest<a class="headerlink" href="#balanced-random-forest" title="Permalink to this heading">#</a></h2>
+<h2>Balanced Random-Forest<a class="headerlink" href="#balanced-random-forest" title="Link to this heading">#</a></h2>
 <p>Balanced Random Forest es una variante del algoritmo clasico Random Forest disenada especificamente para datos con desbalanceo de clases. La diferencia principal con el Random Forest estandar es que en cada arbol que construye, hace un undersampling automatico de la clase mayoritaria para que quede balanceada con la minoritaria, sin necesidad de modificar el dataset original.</p>
 <p>Por que sirve para nuestro problema: El Random Forest estandar ya se uso en varios papers de COVID-19 (C4, C8) y funciono bien, pero en ambos casos tuvieron que aplicar SMOTE antes de entrenar, lo que genera datos sinteticos que pueden introducir ruido. Balanced Random Forest hace ese balance internamente en cada arbol, lo que puede ser mas robusto. Abdulsadig &amp; Rodriguez-Villegas (G7) compararon 10 metodos de rebalanceo incluyendo Balanced Random Forest en senales fisiologicas con desbalanceo, mostrando que esta variante tiene ventajas sobre el Random Forest clasico. La busqueda de verificacion en WoS con COVID-19 y Balanced Random Forest dio solo 1 resultado, lo que muestra que practicamente no se ha probado para prediccion de mortalidad COVID-19.</p>
 <p>Para Balanced Random Forest se utiliza BalancedRandomForestClassifier de la librería imbalanced-learn, el cual integra el balanceo de clases directamente en su mecanismo de construcción de árboles mediante submuestreo aleatorio de la clase mayoritaria en cada iteración, razón por la cual el pipeline no añade ningún paso externo de balanceo independientemente del balanceador seleccionado. El parámetro sampling_strategy controla la proporción entre clases tras el submuestreo y se incluye en el espacio de búsqueda como hiperparámetro a optimizar, siendo exclusivo de este modelo frente a los demás. Cuando el método de balanceo es weights, se añade class_weight como ajuste fino adicional con un rango deliberadamente conservador entre 2 y 10  (mucho menor que el ratio natural de 32 usado en XGBoost y LightGBM) dado que el balanceo intrínseco del algoritmo ya corrige gran parte del desbalanceo y una penalización adicional excesiva produciría una doble corrección que degradaría el rendimiento del modelo.</p>
@@ -2079,7 +2086,7 @@ baseline sin_balanceo   0.825941   0.218742     0.823344     0.218580
 </div>
 </section>
 <section id="catboost-con-manejo-de-desbalanceo">
-<h2>CatBoost con manejo de desbalanceo<a class="headerlink" href="#catboost-con-manejo-de-desbalanceo" title="Permalink to this heading">#</a></h2>
+<h2>CatBoost con manejo de desbalanceo<a class="headerlink" href="#catboost-con-manejo-de-desbalanceo" title="Link to this heading">#</a></h2>
 <p>CatBoost es un algoritmo de boosting basado en arboles desarrollado por Yandex. Su caracteristica principal es que maneja variables categoricas de forma nativa, sin necesidad de convertirlas a numeros antes de entrenar. Usa una tecnica llamada ordered boosting que reduce el sobreajuste y mejora la generalizacion.</p>
 <p>Por que sirve para nuestro problema: El dataset de COVID-19 tiene varias variables categoricas como sexo, tipo de contagio, ubicacion y tipo de recuperacion. CatBoost las puede usar directamente sin hacer one-hot encoding, lo que simplifica el preprocesamiento. Ademas, tiene el parametro class_weights para ajustar el peso de cada clase, util con un ratio de 32:1. Nazli et al. (G10) evaluaron CatBoost junto a LightGBM y otros modelos en datos medicos con SMOTE para tratar el desbalanceo, mostrando resultados competitivos. Sin embargo, en la busqueda de verificacion en WoS con COVID-19, CatBoost e imbalanced solo aparecio 1 resultado, lo que confirma que su aplicacion al contexto de prediccion de mortalidad por COVID-19 con datos epidemiologicos es todavia muy limitada.</p>
 <p>Para CatBoost se implementa un CatBoostClassifier con loss_function=’Logloss’ y allow_writing_files=False, este último parámetro es crítico para evitar que el algoritmo genere archivos de log en disco durante cada fold del cross-validation, lo que ralentizaría significativamente la ejecución del pipeline. La nomenclatura de hiperparámetros difiere de los demás modelos de boosting: iterations reemplaza a n_estimators, depth reemplaza a max_depth y colsample_bylevel reemplaza a colsample_bytree, aunque sus efectos son conceptualmente equivalentes. CatBoost solo soporta regularización L2 via reg_lambda sin equivalente L1, lo que reduce el espacio de búsqueda respecto a XGBoost y LightGBM. El manejo del desbalanceo sigue el mismo patrón que LightGBM: scale_pos_weight fijo en el ratio natural para weights y se incluye como hiperparámetro a optimizar únicamente cuando el balanceador activo es weights, manteniendo la coherencia metodológica con el resto del pipeline.</p>
@@ -2519,7 +2526,7 @@ baseline      weights   0.029076   0.263666     0.026814      0.26661
 </div>
 </section>
 <section id="metricas-de-evaluacion-de-los-modelos">
-<h2>Metricas de Evaluación de los Modelos<a class="headerlink" href="#metricas-de-evaluacion-de-los-modelos" title="Permalink to this heading">#</a></h2>
+<h2>Metricas de Evaluación de los Modelos<a class="headerlink" href="#metricas-de-evaluacion-de-los-modelos" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pickle</span>
@@ -2937,7 +2944,7 @@ baseline      weights   0.029076   0.263666     0.026814      0.26661
 </div>
 </div>
 <section id="analisis-de-matrices-de-confusion">
-<h3>Análisis de matrices de confusión<a class="headerlink" href="#analisis-de-matrices-de-confusion" title="Permalink to this heading">#</a></h3>
+<h3>Análisis de matrices de confusión<a class="headerlink" href="#analisis-de-matrices-de-confusion" title="Link to this heading">#</a></h3>
 <p>Las matrices de confusión permiten observar el comportamiento operativo real de los modelos frente al costo de clasificación. CatBoost evidenció un patrón altamente conservador, clasificando predominantemente como “leve”, lo que redujo falsos positivos pero incrementó sustancialmente los falsos negativos sobre pacientes fallecidos.</p>
 <p>En oposición, Balanced Random Forest optimizado priorizó casi completamente la detección de casos críticos, minimizando falsos negativos hasta valores cercanos a cero. No obstante, esta estrategia generó una sobreclasificación importante de pacientes leves como fallecidos, elevando considerablemente los falsos positivos.</p>
 <p>LightGBM mostró el compromiso más equilibrado entre ambas clases, manteniendo una tasa reducida de falsos negativos sin deteriorar excesivamente la precisión global, lo cual puede resultar más apropiado para entornos clínicos donde tanto la sensibilidad como la estabilidad del sistema son relevantes.</p>
@@ -3089,7 +3096,7 @@ baseline      weights   0.029076   0.263666     0.026814      0.26661
 </div>
 </section>
 <section id="analisis-de-curvas-roc">
-<h3>Análisis de curvas ROC<a class="headerlink" href="#analisis-de-curvas-roc" title="Permalink to this heading">#</a></h3>
+<h3>Análisis de curvas ROC<a class="headerlink" href="#analisis-de-curvas-roc" title="Link to this heading">#</a></h3>
 <p>Las curvas ROC evidencian una capacidad discriminativa similar entre los modelos basados en gradiente boosting y ensambles, con valores AUC cercanos a 0.89 en la mayoría de configuraciones. Visualmente, LightGBM y CatBoost presentan trayectorias más estables y cercanas al vértice superior izquierdo, indicando una separación consistente entre clases.</p>
 <p>Sin embargo, pese a que CatBoost mantiene una curva ROC competitiva, su desempeño en recall revela un problema de umbral de decisión: el modelo discrimina razonablemente bien entre clases, pero adopta una frontera demasiado conservadora hacia la detección de fallecidos. Esto explica por qué un AUC alto no necesariamente se traduce en sensibilidad clínica adecuada.</p>
 <p>Balanced Random Forest optimizado mostró una alta sensibilidad operacional reflejada en su punto de umbral óptimo, desplazándose hacia regiones de alta TPR, aunque incrementando simultáneamente la tasa de falsos positivos.</p>
@@ -3228,15 +3235,15 @@ LightGBM random_search      weights  0.8766     0.1001    0.1797         0.8154 
 </section>
 </section>
 <section id="analisis-comparativo-de-modelos-sota">
-<h2>Análisis Comparativo de Modelos SOTA<a class="headerlink" href="#analisis-comparativo-de-modelos-sota" title="Permalink to this heading">#</a></h2>
+<h2>Análisis Comparativo de Modelos SOTA<a class="headerlink" href="#analisis-comparativo-de-modelos-sota" title="Link to this heading">#</a></h2>
 <p>Los resultados muestran un comportamiento heterogéneo entre modelos al priorizar la detección de la clase minoritaria (fallecidos), con consideraciones adicionales sobre el desempeño temporal durante entrenamiento e inferencia.</p>
 <section id="catboost-alta-especificidad-inutilidad-clinica">
-<h3>CatBoost: Alta Especificidad, Inutilidad Clínica<a class="headerlink" href="#catboost-alta-especificidad-inutilidad-clinica" title="Permalink to this heading">#</a></h3>
+<h3>CatBoost: Alta Especificidad, Inutilidad Clínica<a class="headerlink" href="#catboost-alta-especificidad-inutilidad-clinica" title="Link to this heading">#</a></h3>
 <p>CatBoost obtuvo los mayores valores de accuracy (~97%) y precision (~58.8%), pero su recall permaneció extremadamente bajo (&lt;5%), indicando una fuerte tendencia a privilegiar la clase mayoritaria. Desde la perspectiva del tamizaje de riesgo, esta configuración es clínicamente inadecuada: falla en detectar aproximadamente 96% de los pacientes fallecidos.</p>
 <p>Los tiempos de entrenamiento (5.22-209.20 segundos) y predicción (&lt;0.40 segundos) no mitigaron el problema fundamental — los hiperparámetros optimizados mediante Random Search (209.20 segundos de entrenamiento) no alteran la estrategia de decisión subyacente del modelo. CatBoost requeriría recalibración de threshold de decisión o ajuste explícito de pesos de clase para ser viable en contextos clínicos.</p>
 </section>
 <section id="balanced-random-forest-maxima-sensibilidad-exceso-de-falsos-positivos">
-<h3>Balanced Random Forest: Máxima Sensibilidad, Exceso de Falsos Positivos<a class="headerlink" href="#balanced-random-forest-maxima-sensibilidad-exceso-de-falsos-positivos" title="Permalink to this heading">#</a></h3>
+<h3>Balanced Random Forest: Máxima Sensibilidad, Exceso de Falsos Positivos<a class="headerlink" href="#balanced-random-forest-maxima-sensibilidad-exceso-de-falsos-positivos" title="Link to this heading">#</a></h3>
 <p>BRF optimizado alcanzó el mayor recall del estudio (99.17%), identificando prácticamente la totalidad de pacientes fallecidos. Sin embargo, esta sensibilidad extrema se obtuvo a costa de:</p>
 <ul class="simple">
 <li><p><strong>Precision muy baja</strong> (3.55%): aproximadamente 96.5% de predicciones positivas constituyen falsos positivos, generando una carga clínica considerable de pacientes innecesariamente catalogados como críticos</p></li>
@@ -3246,7 +3253,7 @@ LightGBM random_search      weights  0.8766     0.1001    0.1797         0.8154 
 <p>El trade-off es desfavorable desde la perspectiva de reducir falsos positivos: para incrementar recall en 11 puntos porcentuales respecto a LightGBM baseline, se genera una proporción inmanejable de alarmas clínicas innecesarias que comprometería la implementación operacional del modelo.</p>
 </section>
 <section id="lightgbm-equilibrio-optimo-entre-sensibilidad-y-especificidad">
-<h3>LightGBM: Equilibrio Óptimo entre Sensibilidad y Especificidad<a class="headerlink" href="#lightgbm-equilibrio-optimo-entre-sensibilidad-y-especificidad" title="Permalink to this heading">#</a></h3>
+<h3>LightGBM: Equilibrio Óptimo entre Sensibilidad y Especificidad<a class="headerlink" href="#lightgbm-equilibrio-optimo-entre-sensibilidad-y-especificidad" title="Link to this heading">#</a></h3>
 <p><strong>LightGBM Baseline (Weights)</strong> emergió como la configuración más balanceada:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -3302,8 +3309,8 @@ LightGBM random_search      weights  0.8766     0.1001    0.1797         0.8154 
 </section>
 <hr class="docutils" />
 <section id="conclusion-y-recomendacion">
-<h2>Conclusión y Recomendación<a class="headerlink" href="#conclusion-y-recomendacion" title="Permalink to this heading">#</a></h2>
-<p><strong>Para el modelo final se recomienda LightGBM Baseline Weights</strong> por:</p>
+<h2>Conclusión y Recomendación<a class="headerlink" href="#conclusion-y-recomendacion" title="Link to this heading">#</a></h2>
+<p><strong>Para el modelo final se recomienda LightGBM Random Search con Balanceo Weights</strong> por:</p>
 <ol class="arabic simple">
 <li><p><strong>Utilidad clínica</strong>: Detecta 83.75% de fallecidos manteniendo precision 3.3 veces superior a BRF, minimizando la carga de falsos positivos que comprometería la adopción clínica</p></li>
 <li><p><strong>Robustez métrica</strong>: Highest F1-score (0.2051) y balanced accuracy (82.00%) entre configuraciones competitivas, indicando equilibrio robusto entre sensibilidad y especificidad</p></li>
@@ -3313,6 +3320,31 @@ LightGBM random_search      weights  0.8766     0.1001    0.1797         0.8154 
 <ul class="simple">
 <li><p>Si el protocolo clínico prioriza <strong>máxima sensibilidad con tolerancia a falsos positivos</strong>: LightGBM Random Search (recall 87.66%, requiere triage secundario eficiente)</p></li>
 <li><p><strong>Descartar CatBoost</strong> y <strong>BRF Random</strong>: generan proporción inmanejable de falsos positivos que invierten el objetivo de reducción del riesgo de mortalidad no detectada</p></li>
+</ul>
+</section>
+<section id="referencias">
+<h2>Referencias:<a class="headerlink" href="#referencias" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Sagaceta-Mejia et al. (2025). Enhancing Predictive Accuracy in Medical Data Through Oversampling and Interpolation Techniques. Mathematics. <a class="reference external" href="https://doi.org/10.3390/math13244032">https://doi.org/10.3390/math13244032</a></p></li>
+<li><p>ElSeddawy et al. (2022). Predictive Analysis of Diabetes-Risk with Class Imbalance. Computational Intelligence and Neuroscience. <a class="reference external" href="https://doi.org/10.1155/2022/3078025">https://doi.org/10.1155/2022/3078025</a></p></li>
+<li><p>Aubaidan et al. (2025). A review of intelligent data analysis: ML approaches for addressing class imbalance in healthcare. Intelligent Data Analysis. <a class="reference external" href="https://doi.org/10.1177/1088467X241305509">https://doi.org/10.1177/1088467X241305509</a></p></li>
+<li><p>Eom &amp; Byeon (2023). Searching for Optimal Oversampling to Process Imbalanced Data: GANs and SMOTE. Mathematics. <a class="reference external" href="https://doi.org/10.3390/math11163605">https://doi.org/10.3390/math11163605</a></p></li>
+<li><p>Bounab et al. (2024). Enhancing Medicare Fraud Detection Through ML: Addressing Class Imbalance With SMOTE-ENN. IEEE Access. <a class="reference external" href="https://doi.org/10.1109/ACCESS.2024.3385781">https://doi.org/10.1109/ACCESS.2024.3385781</a></p></li>
+<li><p>Agyemang et al. (2025). Addressing Class Imbalance Problem in Health Data Classification: Practical Application From an Oversampling Viewpoint. Applied Computational Intelligence and Soft Computing. <a class="reference external" href="https://doi.org/10.1155/acis/1013769">https://doi.org/10.1155/acis/1013769</a></p></li>
+<li><p>Abdulsadig &amp; Rodriguez-Villegas (2024). A comparative study in class imbalance mitigation when working with physiological signals. Frontiers in Digital Health. <a class="reference external" href="https://doi.org/10.3389/fdgth.2024.1377165">https://doi.org/10.3389/fdgth.2024.1377165</a></p></li>
+<li><p>Kurtadikar &amp; Pande (2024). 1D-CNN: Classification of normal delivery and cesarean section types using cardiotocography signals. Journal of Intelligent Systems. <a class="reference external" href="https://doi.org/10.1515/jisys-2023-0047">https://doi.org/10.1515/jisys-2023-0047</a></p></li>
+<li><p>Mamilla et al. (2025). Resampling Imbalanced Healthcare Data for Predictive Modelling. Int. Journal of Advanced Computer Science and Applications. <a class="reference external" href="https://doi.org/10.14569/IJACSA.2025.0160204">https://doi.org/10.14569/IJACSA.2025.0160204</a></p></li>
+<li><p>Huang et al. (2025). Interaction effect between data discretization and data resampling for class-imbalanced medical datasets. Technology and Health Care. <a class="reference external" href="https://doi.org/10.1177/09287329241295874">https://doi.org/10.1177/09287329241295874</a></p></li>
+<li><p>Lian et al. (2024). Admission blood tests predicting survival of SARS-CoV-2: graph convolution network in imbalance dataset. BMC Infectious Diseases. <a class="reference external" href="https://doi.org/10.1186/s12879-024-09699-x">https://doi.org/10.1186/s12879-024-09699-x</a></p></li>
+<li><p>Cihan &amp; Ozger (2022). A new approach for determining SARS-CoV-2 epitopes using machine learning-based in silico methods. Computational Biology and Chemistry. <a class="reference external" href="https://doi.org/10.1016/j.compbiolchem.2022.107688">https://doi.org/10.1016/j.compbiolchem.2022.107688</a></p></li>
+<li><p>Keser &amp; Keskin (2023). A gradient boosting-based mortality prediction model for COVID-19 patients. Neural Computing &amp; Applications. <a class="reference external" href="https://doi.org/10.1007/s00521-023-08997-w">https://doi.org/10.1007/s00521-023-08997-w</a></p></li>
+<li><p>Gök &amp; Olgun (2021). SMOTE-NC and gradient boosting imputation based random forest classifier for predicting severity level of COVID-19. Neural Computing &amp; Applications. <a class="reference external" href="https://doi.org/10.1007/s00521-021-06189-y">https://doi.org/10.1007/s00521-021-06189-y</a></p></li>
+<li><p>Stanelle-Bertram et al. (2023). CYP19A1 mediates severe SARS-CoV-2 disease outcome in males. Cell Reports Medicine. <a class="reference external" href="https://doi.org/10.1016/j.xcrm.2023.101152">https://doi.org/10.1016/j.xcrm.2023.101152</a></p></li>
+<li><p>Soundrapandiyan et al. (2023). An Efficient COVID-19 Mortality Risk Prediction Model Using Deep SMOTE and Convolution Neural Networks. BioMedInformatics. <a class="reference external" href="https://doi.org/10.3390/biomedinformatics3020023">https://doi.org/10.3390/biomedinformatics3020023</a></p></li>
+<li><p>Saad et al. (2022). Predicting death risk analysis in fully vaccinated people using novel extreme regression-voting classifier. Digital Health. <a class="reference external" href="https://doi.org/10.1177/20552076221109530">https://doi.org/10.1177/20552076221109530</a></p></li>
+<li><p>Zhao et al. (2021). Development and Validation of Predictors for the Survival of Patients With COVID-19 Based on Machine Learning. Frontiers in Medicine. <a class="reference external" href="https://doi.org/10.3389/fmed.2021.683431">https://doi.org/10.3389/fmed.2021.683431</a></p></li>
+<li><p>Pishgar et al. (2022). A process mining-deep learning approach to predict survival in hospitalized COVID-19 patients. BMC Medical Informatics and Decision Making. <a class="reference external" href="https://doi.org/10.1186/s12911-022-01934-2">https://doi.org/10.1186/s12911-022-01934-2</a></p></li>
+<li><p>Saad et al. (2022). Novel extreme regression-voting classifier to predict death risk in vaccinated people using VAERS data. PLOS ONE. <a class="reference external" href="https://doi.org/10.1371/journal.pone.0270327">https://doi.org/10.1371/journal.pone.0270327</a></p></li>
 </ul>
 </section>
 </section>
@@ -3387,6 +3419,7 @@ LightGBM random_search      weights  0.8766     0.1001    0.1797         0.8154 
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-y-recomendacion">Conclusión y Recomendación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias">Referencias:</a></li>
 </ul>
   </nav></div>
 
@@ -3411,7 +3444,7 @@ By The Jupyter Book Community
 
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
